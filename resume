@@ -1,0 +1,229 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\relevantCoursework}[2]{
+    \item
+    \begin{minipage}[t]{0.97\textwidth}
+        \textbf{\small #1} \\
+        #2
+    \end{minipage}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectSubHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Scott Pramuk} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 831-706-0310 ~ \href{mailto:smpramuk@calpoly.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{smpramuk@calpoly.edu}} ~ 
+    \href{https://linkedin.com/in/spramuk/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/spramuk/}}  ~
+    \href{https://github.com/Smpramuk}{\raisebox{-0.2\height}\faGithub\ \underline{https://github.com/Smpramuk}}  ~
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {California Polytechnic State University, San Luis Obispo }{Sep. 2021-- June 2025}
+    {Bachelor of Science in Computer Science, Minor in Mathematics}{}
+    \item[] \textit{Overall GPA: 3.984}
+    \relevantCoursework{Relevant Coursework:}{Data Structures and Algorithms, Object-Oriented Programming, Discrete Structures, Methods of Proof, Systems Programming, Design and Analysis of Algorithms, Database Systems, Theory of Computation}
+\resumeSubHeadingListEnd
+
+
+  %
+
+%-----------PROJECTS-----------
+\section{Programming Projects}
+    \vspace{-3pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Machine Learning Stock Direction Predictor
+}}{August 2023 - September 2023}
+          \resumeItemListStart
+            \item[] \textit{Languages and Tools Used: Python, VScode, scikit-learn}
+            \resumeItem{Used Random Forest Classification to predict stock price direction after varying amounts of days}
+         \resumeItem{Integrated with Alpha Vantage API for stock price and trading data used to  train model}
+            \resumeItem{Stored predictions and assessed accuracy visually via graphs created with matplot library
+}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{HTTPD, Web Server}}{May 2023 - June 2023}
+          \resumeItemListStart
+           \item[] \textit{Languages and Tools Used: C, Vim, Git}
+            \resumeItem{Built a simple web server that supports a subset of HTTP from the ground up }
+            \resumeItem{Incorporated cgi-like support that allows program to execute on server and provide output back to user}
+            \resumeItem{Utilized C-based system calls (e.g., fork, exec) and proper resource management of child processes and pointers}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Pathfinding Visualizer}}{March 2023 - April 2023}
+          \resumeItemListStart
+          \item[] \textit{Languages and Tools Used: JavaScript, HTML, CSS, Git, VS Code}
+            \resumeItem{Created a web page using HTML and CSS to visualize, compare DFS, BFS, A*, and Dijkstra’s}
+            \resumeItem{Implemented multiple path finding algorithms and corresponding animations in JavaScript and CSS }
+            \resumeItem{Used JavaScript to facilitate dynamic user interaction– i.e. adding weighted nodes and walls}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Simulated File System in Linux VM}}{February 2023 - March 2023}
+          \resumeItemListStart
+          \item[] \textit{Languages and Tools Used: C, Linux VM, Vim}
+            \resumeItem{Created a program that simulated a file system via an inodes list file and corresponding inode data files}
+            \resumeItem{Built functionality for interactive commands such as: cd, ls, mkdir, touch, and exit via the stdin stream}
+          \resumeItemListEnd 
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {California Center Construction Education, California Polytechnic SLO }{January 2023 -- Current}
+      {Website Manager}{San Luis Obispo, California}
+      \resumeItemListStart
+        \resumeItem{Update and rework multiple websites via content management systems such as WordPress and Drupal}
+        \resumeItem{Collect and display data to google sheets from Eventbrite via JavaScript and Eventbrite API calls on Google App Scripts}
+      \resumeItemListEnd
+       \resumeSubheading
+      {California Polytechnic SLO }{January 2023 -- June 2023}
+       {Assistant Grader/ Student Tutor}{San Luis Obispo, California}
+      \resumeItemListStart
+        \resumeItem{Created coding projects and graded assignments for Data Structures and Algorithms, and Introduction to Computer Science courses}
+        \resumeItem{Helped class of 30+ students solidify their understanding of material in lab sections}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+  %-----------SKills-----------
+\section{ Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages: }Python, JavaScript, Java, C, HTML, CSS, SQL, RISC-V Assembly \\
+     \textbf{Software Tools: }VS Code, Git, Vim, Pycharm \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+\end{document}
